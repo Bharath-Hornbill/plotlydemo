@@ -4,7 +4,8 @@ import dash_html_components as html
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-application = app.server
+server=app.server
+# application = app.server
 app.title='Dash on AWS EB!'
 ########### Set up the layout
 app.layout = html.Div(children=[
